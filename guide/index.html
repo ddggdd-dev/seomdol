@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="ko"><head><meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="check" content="no-tel">
+<title>(가상) 섬돌집고침 홈페이지 제작 안내 · 가상 업체 · 시연용</title>
+<meta name="description" content="[가상 업체 · 시연용] 섬돌집고침 홈페이지 제작 안내: 한눈에 요약과 사장님께 부탁드릴 정보 입력.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(가상) 섬돌집고침 홈페이지 제작 안내 [시연용]">
+<meta property="og:description" content="한눈에 요약, 그리고 칸만 채워 보내시면 되는 정보 입력">
+<meta property="og:url" content="https://ddggdd-dev.github.io/seomdol/guide/">
+<meta property="og:image" content="https://ddggdd-dev.github.io/seomdol/v1/img/herom.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%232A231E%22/%3E%3Cpath d=%22M6 16l10-8 10 8v10H6z%22 fill=%22none%22 stroke=%22%23E8892F%22 stroke-width=%223%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&amp;display=swap">
+<style>
+:root{--paper:#F4F6F9;--surface:#FFFFFF;--ink:#0F1E36;--muted:#4A5872;--line:#D3DAE5;--band:#2A231E;--band-ink:#F2F5FA;--band-muted:#CFC3B6;--mark:#9A4E0C;--call:#B4530F;--glow:#FF9A52;color-scheme:light;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--paper:#0B1322;--surface:#121D31;--ink:#E6ECF5;--muted:#A3B2C8;--line:#26354F;--band:#2A231E;--mark:#F2B47A;--call:#D2550D;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:1.0625rem;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:46rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:3px solid var(--glow);outline-offset:2px}
+a{color:var(--mark)}
+.top{background:var(--band);color:var(--band-ink)}
+.top .wrap{padding-block:32px 32px}
+.top img{width:44px;height:44px;border-radius:50%;display:block;margin-bottom:12px}
+.top .meta{margin:0;color:var(--band-muted);font-size:.9375rem}
+h1{font-size:clamp(1.625rem,1.3rem + 1.6vw,2.25rem);line-height:1.25;margin:6px 0 16px;letter-spacing:-.015em}
+.sum{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.sum li{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:12px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.16)}
+.sum b{color:var(--glow);font-size:.9375rem}
+.sum span{color:var(--band-ink)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border-radius:6px;font-weight:700;text-decoration:none;font-family:inherit;font-size:1rem;cursor:pointer;border:2px solid transparent}
+.btn-p{background:var(--call);color:#fff}
+.btn-s{border-color:currentColor;color:inherit;background:transparent}
+.top .btn-s{color:var(--band-ink)}
+main .wrap{padding-block:8px 64px}
+section{padding-top:40px}
+h2{font-size:1.375rem;line-height:1.35;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+fieldset{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:16px;margin:0 0 16px;min-width:0}
+legend{font-weight:700;padding:0 6px;font-size:1.0625rem}
+.why{margin:0 0 4px;color:var(--muted);font-size:.875rem;line-height:1.5}
+.f{display:flex;flex-direction:column;gap:6px;margin-top:12px;min-width:0}
+.f>label,.f>span{font-size:.9375rem;font-weight:600}
+input[type=text],input[type=date],textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:4px;min-height:48px;padding:10px 12px;width:100%}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(194,65,12,.25)}
+::placeholder{color:var(--muted);opacity:.85}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0;margin:0;width:100%;height:100%;cursor:pointer}
+.seg span{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;font-size:.9375rem;background:var(--paper)}
+.seg input:checked+span{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600}
+.seg input:focus-visible+span{outline:3px solid var(--glow);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:10px}
+.veh{display:grid;grid-template-columns:3.6em minmax(0,2.2fr) minmax(0,1fr);gap:8px;align-items:center;margin-top:8px}
+.veh b{font-size:.9375rem}
+.chk{display:flex;align-items:center;gap:10px;min-height:44px;font-size:.9688rem}
+.chk input{width:20px;height:20px;accent-color:var(--call)}
+.out{background:var(--band);color:var(--band-ink);border-radius:8px;padding:16px;margin-top:8px}
+.out h2{color:var(--band-ink)}
+.msg{white-space:pre-wrap;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:4px;padding:12px;margin:12px 0;font:inherit;font-size:.9375rem;min-height:120px}
+.out p{margin:0;color:var(--band-muted);font-size:.9375rem}
+.copied{color:var(--glow)!important;min-height:1.5em;margin-top:8px!important}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:16px 36px 16px 0;font-weight:700;list-style:none;position:relative;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:12px;font-size:1.5rem;color:var(--muted)}
+details[open] summary::after{content:"−"}
+details .in{padding-bottom:16px}
+details p{margin:0 0 12px}
+.tbl{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.9375rem;background:var(--surface)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--paper)}
+ol,ul{padding-left:1.3em;margin:0 0 12px}
+li{margin-bottom:6px}
+footer{color:var(--muted);font-size:.9375rem;padding-block:24px}
+.demo-note{background:#3B2A6B;color:#fff;font-weight:700;text-align:center;padding:10px 16px;font-size:.9375rem}
+.demo-note span{font-weight:400}
+</style>
+</head>
+<body>
+<div class="demo-note" role="note">가상 업체 · 시연용 <span>— 실제 업체가 아닙니다. 제작 과정을 시험하려고 만든 안내 문서예요.</span></div>
+<header class="top">
+  <div class="wrap">
+    <p class="meta">2026년 10월 23일 · 홈페이지 제작팀(고성식·장남덕·진호)</p>
+    <h1>박섬돌 사장님, 한눈에 정리했습니다</h1>
+    <ul class="sum">
+      <li><b>목표</b><span>도시에 사는 자녀분과 귀농·귀촌 준비하시는 분이 휴대폰으로 보고 "여기면 맡겨도 되겠다" 싶어 바로 전화하게 만듭니다.</span></li>
+      <li><b>약속</b><span>사장님께 들은 사실만 씁니다. 과장하는 말은 쓰지 않습니다.</span></li>
+      <li><b>하실 일</b><span>아래 칸을 아시는 만큼 채워 보내 주시고, 시안을 보고 "좋다 / 고쳐 달라"만 말씀해 주세요.</span></li>
+      <li><b>일정</b><span>정보와 사진을 받은 날부터 일주일 안에 공개합니다.</span></li>
+      <li><b>공개 후</b><span>매주 사이트를 점검하고, 매달 문의 수와 검색 노출을 보고드립니다.</span></li>
+    </ul>
+    <div class="btns">
+      <a class="btn btn-p" href="#form">정보 입력하기</a>
+      <a class="btn btn-s" href="../v1/">시안 보기</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section id="form" aria-labelledby="form-h">
+      <h2 id="form-h">사장님께 부탁드릴 정보</h2>
+      <p class="lead">급한 것부터 순서대로입니다. 모르는 칸은 비워 두세요. 채우면 아래에 문자가 만들어지고, 복사해서 카톡으로 보내 주시면 됩니다.</p>
+      <form id="f" novalidate="">
+        <fieldset>
+          <legend>1. 실제 공사 사진</legend>
+          <p class="why">지금 시안 사진은 참고 사진입니다. 시골집 손님은 "고치기 전·후"와 "누가 일하는지"를 가장 궁금해합니다.</p>
+          <div class="seg" role="radiogroup" aria-label="사진 보내실 방법">
+            <label><input type="radio" name="사진" value="카톡으로 보내겠음"><span>카톡으로 보낼게요</span></label>
+            <label><input type="radio" name="사진" value="사진통으로 찍어 보내겠음"><span>사진통으로 찍어 보낼게요</span></label>
+            <label><input type="radio" name="사진" value="촬영하러 와 주세요"><span>찍으러 와 주세요</span></label></div>
+          <p class="lead" style="margin:12px 0 0;font-size:.9375rem">찍을 것: 고치기 전·후 같은 자리 2장씩(집 3채 이상), 공사 중간 사진, 두 분이 일하는 모습(원하시면), 손님께 보낸 카톡 사진 보고 1장(얼굴·주소 가림)</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. 고친 집 사례 (3건)</legend>
+          <p class="why">살펴본 업체들은 완공 사진만 올리고 기간·공사 범위를 적지 않았습니다. 이걸 적으면 멀리 사는 가족이 판단하기 쉽습니다.</p>
+          <div class="f"><label for="c1">사례 1: 면 이름 · 한 일 · 걸린 기간 · 비용 범위</label><input type="text" id="c1" placeholder="예: ○○면, 재래식 화장실 입식, ○주, ○백만 원대" data-k="사례1"></div>
+          <div class="f"><label for="c2">사례 2</label><input type="text" id="c2" data-k="사례2"></div>
+          <div class="f"><label for="c3">사례 3</label><input type="text" id="c3" data-k="사례3"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. 자주 하는 공사의 비용·기간 (범위라도)</legend>
+          <p class="why">"문의하세요"만 있으면 멀리 사는 분은 전화를 미룹니다. 범위만 있어도 연락이 쉬워집니다.</p>
+          <div class="grid">
+            <div class="f"><label for="p1">재래식 화장실 입식</label><input type="text" id="p1" placeholder="예: ○백만~○백만 원, ○일" data-k="화장실 입식"></div>
+            <div class="f"><label for="p2">기름보일러 교체</label><input type="text" id="p2" data-k="보일러 교체"></div>
+            <div class="f"><label for="p3">슬레이트 지붕 교체 (철거 별도)</label><input type="text" id="p3" data-k="지붕 교체"></div>
+            <div class="f"><label for="p4">단열·창호 (집 전체)</label><input type="text" id="p4" data-k="단열·창호"></div>
+          </div>
+          <div class="f"><span id="pp-l">홈페이지에 비용 범위를 적어도 될까요?</span><div class="seg" role="radiogroup" aria-labelledby="pp-l">
+            <label><input type="radio" name="비용 공개" value="범위로 공개"><span>범위로 공개</span></label>
+            <label><input type="radio" name="비용 공개" value="공개 안 함"><span>적지 말아 주세요</span></label></div></div>
+          <div class="f"><label for="extra">공사 중 추가 비용이 생기면 어떻게 하시나요?</label><input type="text" id="extra" placeholder="예: 사진 보여 드리고 동의받은 뒤 진행" data-k="추가 비용 처리"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. 빈집 사기 전에 같이 가 주실 때</legend>
+          <p class="why">귀농·귀촌 준비하시는 분께 가장 다른 점이 될 수 있어 따로 크게 소개하려고 합니다.</p>
+          <div class="grid">
+            <div class="f"><label for="b1">비용</label><input type="text" id="b1" placeholder="예: 무료 / ○만원" data-k="사기 전 동행 비용"></div>
+            <div class="f"><label for="b2">무엇을 봐 주시나요</label><input type="text" id="b2" placeholder="예: 지붕, 기둥, 습기, 화장실" data-k="사기 전 보는 곳"></div>
+          </div>
+          <div class="f"><label for="b3">본 뒤에 드리는 것</label><input type="text" id="b3" placeholder="예: 말로 설명, 고칠 곳과 대략 비용" data-k="사기 전 드리는 것"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. 사업자·면허·보험·A/S</legend>
+          <p class="why">멀리 사는 자녀분들이 "믿을 만한 업체인지" 확인할 때 봅니다.</p>
+          <div class="grid">
+            <div class="f"><label for="bizno">사업자등록번호</label><input type="text" id="bizno" inputmode="numeric" placeholder="000-00-00000" data-k="사업자등록번호"></div>
+            <div class="f"><label for="lic">면허 (있으면)</label><input type="text" id="lic" placeholder="예: 실내건축공사업" data-k="면허"></div>
+          </div>
+          <div class="f"><span id="ins-l">공사 중 사고에 대비한 보험</span><div class="seg" role="radiogroup" aria-labelledby="ins-l">
+            <label><input type="radio" name="보험" value="있음"><span>있음</span></label>
+            <label><input type="radio" name="보험" value="없음"><span>없음</span></label>
+            <label><input type="radio" name="보험" value="잘 모름"><span>잘 모름</span></label></div></div>
+          <div class="f"><label for="as">공사 끝나고 문제가 생기면 (A/S)</label><input type="text" id="as" placeholder="예: ○년 안에는 다시 와서 봐 드림" data-k="A/S 기준"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>6. 사람과 연락</legend>
+          <div class="grid">
+            <div class="f"><label for="bro">동생분 이름 (적어도 되면)</label><input type="text" id="bro" data-k="동생 이름"></div>
+            <div class="f"><label for="hours">일하는 시간 (일요일 휴무)</label><input type="text" id="hours" placeholder="예: 월~토 8~18시" data-k="영업시간"></div>
+          </div>
+          <div class="f"><label for="photo">공사 중 사진은 얼마나 자주 보내시나요?</label><input type="text" id="photo" placeholder="예: 매일 저녁 / 단톡방" data-k="사진 보내는 방식"></div>
+          <div class="f"><label for="out">홍성·예산·청양·보령 밖도 가시나요?</label><input type="text" id="out" placeholder="예: 서산·당진은 상의 후" data-k="그 밖 지역"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>7. 확인 부탁드리는 문장</legend>
+          <p class="why">사장님 말씀이 아닌, 저희가 쓴 문장이라 확인이 필요합니다.</p>
+          <label class="chk"><input type="checkbox" value="문자로 문의 받아도 괜찮음 (시안의 문자 만들기 기능)">문자로 문의를 받아도 괜찮아요</label>
+          <label class="chk"><input type="checkbox" value="'견적 방문 무료'라고 적어도 됨">'견적 방문 무료'라고 적어도 돼요</label>
+          <label class="chk"><input type="checkbox" value="공공 지원사업 링크 안내를 홈페이지에 넣어도 됨">공공 지원사업 안내 링크를 넣어도 돼요</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>8. 그 밖에</legend>
+          <div class="f"><label for="links">카카오톡 채널·네이버 플레이스·블로그 주소 <span style="font-weight:400;color:var(--muted)">(있으면)</span></label><input type="text" id="links" data-k="외부 채널"></div>
+          <div class="f"><label for="etc">고칠 곳이나 하고 싶은 말씀</label><textarea id="etc" data-k="하실 말씀"></textarea></div>
+        </fieldset>
+      </form>
+
+      <div class="out" aria-labelledby="out-h">
+        <h2 id="out-h">보내실 내용</h2>
+        <pre class="msg" id="msg" aria-live="polite"></pre>
+        <button type="button" class="btn btn-p" id="copy">복사하기</button>
+        <p class="copied" id="copied" role="status"></p>
+        <p>복사한 내용을 카톡으로 제작팀에 보내 주세요. 입력하신 내용은 이 페이지에 저장되지 않고 어디에도 보내지지 않습니다. 계좌번호처럼 민감한 정보는 적지 않으셔도 됩니다.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="more-h">
+      <h2 id="more-h">자세한 설명 (필요할 때만 펼쳐 보세요)</h2>
+      <details>
+        <summary>목표와 확인 방법</summary>
+        <div class="in">
+          <p>시골집 손님은 세 가지를 보고 연락합니다. 우리 군까지 와서 직접 봐 주는지, 멀리 있어도 믿고 맡길 수 있는지, 이 집이 고쳐서 살 만한지입니다. 홈페이지 순서도 이 질문에 맞췄습니다.</p>
+          <div class="tbl"><table>
+            <tbody><tr><th>확인하는 것</th><th>방법</th><th>언제</th></tr>
+            <tr><td>홈페이지를 보고 온 문의 수</td><td>사장님께 여쭤봄</td><td>오픈 후 한 달, 이후 매달</td></tr>
+            <tr><td>검색에 나오는지</td><td>"섬돌집고침", "홍성 농가주택 리모델링"으로 네이버·구글 확인</td><td>매달</td></tr>
+            <tr><td>사장님이 링크를 쓰시는지</td><td>손님에게 명함처럼 보내시는지</td><td>오픈 후 한 달</td></tr>
+          </tbody></table></div>
+          <p>검색 순위와 문의 수는 약속드릴 수 없습니다. 대신 매달 솔직하게 보고드리고 맞춰 고쳐 나가겠습니다.</p>
+        </div>
+      </details>
+      <details>
+        <summary>다른 업체를 살펴본 결과</summary>
+        <div class="in">
+          <p>2026년 10월 22일, 국내 리모델링·지붕·창호 업체 17곳과 해외 옛집 고치는 업체들을 살펴보고, 잘 만든 3곳은 휴대폰 화면을 직접 확인했습니다. 시골집만 다루는 업체 홈페이지는 찾지 못했고, 작은 업체는 대부분 당근·블로그로 운영하고 있었습니다.</p>
+          <div class="tbl"><table>
+            <tbody><tr><th>다른 업체들</th><th>섬돌집고침 홈페이지</th></tr>
+            <tr><td>도시 아파트 위주, 견적 칸이 아파트 전용인 곳도 있음</td><td>시골집 손님 말(재래식 부엌·화장실, 기름보일러, 슬레이트, 빈집)로</td></tr>
+            <tr><td>공공 지원사업 안내는 거의 없음</td><td>고칠 곳을 고르면 확인해 볼 제도와 묻는 곳, 공식 링크를 보여 줌</td></tr>
+            <tr><td>"1위", "100%", "대한민국 대표" 같은 말</td><td>사장님 문구 "오래된 집, 오래 살 집으로"와 사실만</td></tr>
+            <tr><td>사례는 완공 사진과 지역뿐</td><td>위 2번을 받으면 기간·공사 범위·비용 범위까지 적음</td></tr>
+          </tbody></table></div>
+          <p>잘하는 업체들은 면허·보험·A/S 기간을 숫자로 보여 줍니다. 위 5번을 받으면 따라잡을 수 있습니다.</p>
+        </div>
+      </details>
+      <details>
+        <summary>만드는 기준 (약속)</summary>
+        <div class="in"><ol>
+          <li>지어낸 내용은 넣지 않습니다. 사장님께 확인받은 것만 씁니다.</li>
+          <li>사진 출처를 밝힙니다. 참고 사진에는 "참고 이미지"라고 적고, 최종본은 실제 사진으로 바꿉니다.</li>
+          <li>지원사업은 제도 이름과 묻는 곳, 공식 링크만 적습니다. 금액이나 "받을 수 있다"는 말은 쓰지 않습니다.</li>
+          <li>어느 화면에서든 전화로 이어집니다.</li>
+          <li>휴대폰에서 첫 화면이 2.5초 안에 뜨게 합니다. 지금 시안은 측정 도구에서 2.1초입니다.</li>
+          <li>어르신도 읽기 쉽게 글자를 크게, 버튼을 크게 만듭니다.</li>
+          <li>검색과 카카오톡 공유에 대비합니다. 검색 순위는 보장할 수 없습니다.</li>
+        </ol></div>
+      </details>
+      <details>
+        <summary>진행 순서</summary>
+        <div class="in"><ol>
+          <li>시안 확인: 휴대폰으로 보시고 고칠 곳을 알려 주세요. 캡처에 동그라미를 쳐서 보내셔도 됩니다.</li>
+          <li>정보·사진 받기: 위 칸을 채워 보내 주시면 시안의 주황색 점선 칸을 채웁니다.</li>
+          <li>수정: 말씀하신 곳은 같은 날 고칩니다.</li>
+          <li>공개: 승인하시면 누구나 볼 수 있게 올립니다. 못 받은 항목은 빼고 올립니다.</li>
+        </ol></div>
+      </details>
+      <details>
+        <summary>공개 후 관리</summary>
+        <div class="in"><ul>
+          <li>매주 사이트 상태와 빠진 정보를 점검합니다.</li>
+          <li>매달 문의 수와 검색 노출을 짧게 보고드립니다.</li>
+          <li>바뀐 정보는 알려 주신 날 고칩니다. 지원사업 링크는 해가 바뀌면 다시 확인합니다.</li>
+          <li>네이버 플레이스·카카오 채널은 사장님 계정으로 만들어 홈페이지와 연결해 드립니다.</li>
+        </ul></div>
+      </details>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap">홈페이지 제작팀 · 2026-10-23 · <b>가상 업체 · 시연용</b></div></footer>
+<script>
+(function(){
+  var f=document.getElementById('f'), msg=document.getElementById('msg');
+  function build(){
+    var lines=['[섬돌집고침 홈페이지 정보]'];
+    var seen={};
+    [].forEach.call(f.querySelectorAll('input,textarea'),function(el){
+      if(el.type==='radio'){ if(el.checked&&!seen[el.name]){seen[el.name]=1;lines.push(el.name+': '+el.value);} return; }
+      if(el.type==='checkbox'){ if(el.checked) lines.push(el.value); return; }
+      var v=(el.value||'').trim(); if(v) lines.push((el.dataset.k||el.id)+': '+v);
+    });
+    msg.textContent=lines.length>1?lines.join('\n'):'[섬돌집고침 홈페이지 정보]\n(위 칸을 채우면 여기에 정리됩니다)';
+  }
+  f.addEventListener('input',build); f.addEventListener('change',build); f.addEventListener('submit',function(e){e.preventDefault()}); build();
+  document.getElementById('copy').addEventListener('click',function(){
+    var t=msg.textContent, out=document.getElementById('copied');
+    var sel=function(){try{var r=document.createRange();r.selectNodeContents(msg);var s=getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){out.textContent='복사했습니다. 카톡에 붙여 넣어 보내 주세요.'},function(){sel();out.textContent='위 내용을 길게 눌러 복사해 주세요.'});}
+    else{sel();out.textContent='위 내용을 길게 눌러 복사해 주세요.';}
+  });
+})();
+</script>
+
+
+</body></html>
