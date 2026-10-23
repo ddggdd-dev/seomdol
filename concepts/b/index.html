@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><title>시안 B 흙벽과 공정 · (가상) 섬돌집고침 · 시연용</title>
+
+
+<meta name="format-detection" content="telephone=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;800&amp;family=Gothic+A1:wght@400;600;700&amp;display=swap">
+<!-- 시안 B "흙벽과 공정": 글자가 주인공인 첫 화면(흙벽 황토색 바탕 위 큰 제목),
+     바로 아래 실제 진행 순서 4단계를 사진 띠로. 장인 작업장 느낌. 버튼은 솔잎 짙은 초록. -->
+<style>
+:root{
+  --clay:#C79A6B; --clay-2:#B58658; --earth:#2A1D14; --pine:#1F3B2D; --paper:#F6EFE4; --muted:#5A4636; --line:rgba(42,29,20,.22);
+  --display:"Hahmlet","Noto Serif KR",serif; --sans:"Gothic A1","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--earth);font-family:var(--sans);font-size:18px;line-height:1.75;word-break:keep-all}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.demo{background:#3B2A6B;color:#fff;text-align:center;font-size:15px;padding:8px 16px}
+
+.hero{background:var(--clay);background-image:radial-gradient(rgba(42,29,20,.07) 1px,transparent 1.4px);background-size:7px 7px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:72px;border-bottom:1px solid var(--line)}
+.logo{display:inline-flex;align-items:center;min-height:44px;font-family:var(--display);font-weight:800;font-size:1.375rem;text-decoration:none}
+.logo small{font-family:var(--sans);font-weight:400;font-size:.75rem;margin-left:6px}
+.tel{font-weight:700;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}
+.hero-body{padding-block:64px 56px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
+.hero-body>*{min-width:0}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.8rem,7.6vw,6.4rem);line-height:1.08;margin:0;letter-spacing:-.03em}
+.hero p{margin:0}
+.sub{font-size:1.125rem;max-width:26em}
+.who{margin:0 0 20px;font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;font:700 1.0625rem var(--sans);text-decoration:none;border:2px solid var(--earth);border-radius:999px}
+.btn.p{background:var(--pine);border-color:var(--pine);color:#fff}
+.telline{margin-top:14px!important}
+.telline b{font-size:1.25rem;user-select:all}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:0;padding:0;background:var(--earth);color:var(--paper);counter-reset:s}
+.steps li{position:relative;counter-increment:s;min-width:0}
+.steps img{width:100%;aspect-ratio:3/4;object-fit:cover;opacity:.82}
+.steps .cap{position:absolute;left:0;right:0;bottom:0;padding:56px 20px 20px;background:linear-gradient(0deg,rgba(42,29,20,.92),rgba(42,29,20,0))}
+.steps .cap::before{content:counter(s);display:block;font-family:var(--display);font-size:2.4rem;font-weight:800;line-height:1;color:var(--clay)}
+.steps h3{margin:8px 0 2px;font-size:1.25rem}
+.steps p{margin:0;font-size:.9375rem;color:#E7DCCB}
+.steps .tag{position:absolute;top:10px;left:10px;font-size:12px;background:rgba(0,0,0,.55);padding:1px 7px}
+
+.say{padding-block:80px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.say>*{min-width:0}
+.say h2{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.25;margin:0}
+.say p{margin:0 0 14px}
+.note{color:var(--muted);font-size:.9375rem}
+footer{background:var(--earth);color:#D9CBB8;font-size:15px;padding-block:32px}
+
+@media (max-width:860px){
+  .hero-body{grid-template-columns:1fr;gap:24px;padding-block:40px}
+  .steps{grid-template-columns:1fr 1fr}
+  .say{grid-template-columns:1fr;padding-block:56px;gap:24px}
+}
+@media (max-width:560px){ .btn{flex:1 1 100%} }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body><div class="demo">가상 업체 · 시연용 — 실제 업체가 아닙니다 · 시안 B</div>
+<section class="hero">
+  <header><div class="wrap">
+    <a class="logo" href="#">섬돌집고침<small>(가상)</small></a>
+    <a class="tel" href="tel:010-0000-0000">010-0000-0000</a>
+  </div></header>
+  <div class="wrap hero-body">
+    <h1>오래된 집,<br>오래 살<br>집으로</h1>
+    <div>
+      <p class="who">충남 홍성 · 시골집 고치는 일 15년</p>
+      <p class="sub">단열·창호·지붕, 재래식 부엌·화장실 입식으로, 기름보일러 교체. 홍성·예산·청양·보령까지 다닙니다.</p>
+      <div class="btns"><a class="btn p" href="tel:010-0000-0000">전화 상담</a><a class="btn" href="#">우리 집 상태 정리하기</a></div>
+      <p class="telline">전화 <b>010-0000-0000</b> · 일요일은 쉽니다</p>
+    </div>
+  </div>
+</section>
+
+<ol class="steps" aria-label="진행 순서">
+  <li><img src="img/c-ceiling.jpg" alt="낡아 드러난 천장 들보 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>전화</h3><p>집 위치와 고칠 곳을 알려 주세요.</p></div></li>
+  <li><img src="img/c-hands.jpg" alt="나무판에 연필로 선을 긋는 손 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>현장 보기</h3><p>직접 가서 봅니다. 돈 받지 않습니다.</p></div></li>
+  <li><img src="img/c-rafters.jpg" alt="서까래 천장 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>견적</h3><p>현장을 보고 견적을 드립니다.</p></div></li>
+  <li><img src="img/c-work.jpg" alt="단열재가 드러난 공사 중인 방 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>공사·사진 소식</h3><p>공사 중 사진을 카톡으로 보내 드립니다.</p></div></li>
+</ol>
+
+<section class="wrap say">
+  <h2>대표와 동생,<br>두 사람이 다닙니다</h2>
+  <div>
+    <p>전기·설비는 아는 기술자분들을 불러 같이 합니다. 슬레이트 철거는 허가받은 업체가 하고, 섬돌집고침은 새 지붕을 올립니다.</p>
+    <p>빈집 사기 전에 집 상태를 같이 봐 달라는 분도 계십니다. 그럴 때도 같이 가 드립니다.</p>
+    <p class="note">시안 B는 첫 화면과 분위기를 보여 드리는 견본입니다. 고르시면 나머지 섹션을 이 모양으로 이어 붙입니다.</p>
+  </div>
+</section>
+<footer><div class="wrap">(가상) 섬돌집고침 · 대표 박섬돌 · 충남 홍성군 · 010-0000-0000 · 사진은 Unsplash 참고 이미지 · <b>가상 업체 · 시연용</b></div></footer>
+</body></html>

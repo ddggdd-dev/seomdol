@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><title>시안 C 누구 집인가요 · (가상) 섬돌집고침 · 시연용</title>
+
+
+<meta name="format-detection" content="telephone=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&amp;family=Nanum+Gothic:wght@400;700;800&amp;display=swap">
+<!-- 시안 C "누구 집인가요": 첫 화면이 곧 질문. 멀리 사는 자녀가 휴대폰으로 눌러 보는 상황을 위해
+     세 가지 중 하나를 누르면 그 경우에 맞는 사실만 바로 아래에 펼친다. 쪽빛(남)과 유채꽃 노랑. -->
+<style>
+:root{
+  --indigo:#23395B; --indigo-2:#2F4A73; --rape:#F2C230; --rice:#FFFDF6; --ink:#1B2433; --muted:#4F5A6B; --line:#DCE1E8;
+  --display:"Do Hyeon","Apple SD Gothic Neo",sans-serif; --sans:"Nanum Gothic","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--rice);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.75;word-break:keep-all}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.demo{background:#3B2A6B;color:#fff;text-align:center;font-size:15px;padding:8px 16px}
+header{background:var(--indigo);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:64px}
+.logo{font-family:var(--display);font-size:1.5rem;text-decoration:none}
+.logo small{font-family:var(--sans);font-size:.75rem;margin-left:6px;opacity:.85}
+.tel{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;background:var(--rape);color:var(--ink);font-weight:800;text-decoration:none;border-radius:6px;white-space:nowrap}
+
+.band{position:relative;background:var(--indigo)}
+.band img{width:100%;height:clamp(180px,30vh,300px);object-fit:cover;object-position:50% 70%;opacity:.9}
+.band span{position:absolute;right:12px;bottom:10px;background:rgba(0,0,0,.55);color:#fff;font-size:13px;padding:2px 8px}
+
+.ask{position:relative;margin-top:-72px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(35,57,91,.16);padding:40px;display:grid;gap:20px}
+.ask .k{margin:0;color:var(--muted);font-weight:700}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.2;margin:0;color:var(--indigo)}
+.slogan{margin:0;font-size:1.0625rem;color:var(--muted)}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.choices button{font:inherit;text-align:left;cursor:pointer;background:var(--rice);border:2px solid var(--line);border-radius:10px;padding:18px 18px 20px;min-height:112px;display:grid;gap:4px;align-content:start;color:var(--ink)}
+.choices button b{font-family:var(--display);font-weight:400;font-size:1.5rem;color:var(--indigo)}
+.choices button span{font-size:.9375rem;color:var(--muted)}
+.choices button[aria-pressed="true"]{border-color:var(--indigo);background:#EEF2F8;box-shadow:inset 0 0 0 1px var(--indigo)}
+.choices button:focus-visible{outline:3px solid var(--rape);outline-offset:2px}
+.answer{border-top:2px solid var(--indigo);padding-top:20px;display:grid;gap:14px}
+.answer h2{margin:0;font-size:1.25rem}
+.answer ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:10px;font:800 1.0625rem var(--sans);text-decoration:none;background:var(--indigo);color:#fff}
+.telline b{font-size:1.25rem;color:var(--indigo);user-select:all}
+
+.jobs{padding-block:72px;display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
+.jobs>*{min-width:0}
+.jobs h2{font-family:var(--display);font-weight:400;font-size:2.2rem;line-height:1.2;margin:0;color:var(--indigo)}
+.jobs ol{margin:0;padding:0;list-style:none;display:grid;gap:0;border-top:1px solid var(--line)}
+.jobs li{padding:16px 0;border-bottom:1px solid var(--line);font-weight:700;display:flex;gap:14px;align-items:baseline}
+.jobs li::before{content:"";flex:none;width:12px;height:12px;border-radius:3px;background:var(--rape);transform:translateY(1px)}
+.note{color:var(--muted);font-size:.9375rem}
+footer{background:var(--indigo);color:#D3DBE8;font-size:15px;padding-block:32px}
+@media (max-width:760px){
+  .ask{margin-top:-40px;padding:24px 20px}
+  .choices{grid-template-columns:1fr}
+  .choices button{min-height:0}
+  .btn{flex:1 1 100%}
+  .jobs{grid-template-columns:1fr;padding-block:48px;gap:20px}
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body><div class="demo">가상 업체 · 시연용 — 실제 업체가 아닙니다 · 시안 C</div>
+<header><div class="wrap">
+  <a class="logo" href="#">섬돌집고침<small>(가상)</small></a>
+  <a class="tel" href="tel:010-0000-0000">010-0000-0000</a>
+</div></header>
+<div class="band"><img src="img/c-field.jpg" alt="산 아래 밭과 시골집들 (참고 이미지)" width="1800" height="900"><span>참고 이미지</span></div>
+
+<main class="wrap">
+  <section class="ask" aria-labelledby="h1">
+    <p class="k">충남 홍성·예산·청양·보령 시골집 고치기 · 15년</p>
+    <h1 id="h1">누구 집을 고치시나요?</h1>
+    <p class="slogan">"오래된 집, 오래 살 집으로" — 박섬돌 대표</p>
+    <div class="choices" role="group" aria-label="누구 집인가요">
+      <button type="button" data-k="parent" aria-pressed="true"><b>부모님 댁</b><span>도시에 살면서 시골 부모님 집을</span></button>
+      <button type="button" data-k="empty" aria-pressed="false"><b>귀농·귀촌할 빈집</b><span>빈집을 사거나 고쳐서 들어가려고</span></button>
+      <button type="button" data-k="mine" aria-pressed="false"><b>지금 사는 집</b><span>춥고 불편한 데를 고치려고</span></button>
+    </div>
+    <div class="answer" aria-live="polite">
+      <h2 id="ah"></h2>
+      <ul id="al"></ul>
+      <div class="cta"><a class="btn" href="tel:010-0000-0000">전화 상담</a><span class="telline">전화 <b>010-0000-0000</b> · 일요일은 쉽니다</span></div>
+    </div>
+  </section>
+
+  <section class="jobs">
+    <h2>시골집에서 주로 고치는 다섯 가지</h2>
+    <div>
+      <ol>
+        <li>농가주택 단열·창호 교체·지붕</li>
+        <li>재래식 부엌·화장실을 입식으로</li>
+        <li>기름보일러 교체</li>
+        <li>슬레이트 지붕 교체 (철거는 허가받은 업체가)</li>
+        <li>빈집 고쳐서 들어가기</li>
+      </ol>
+      <p class="note" style="margin-top:20px">시안 C는 첫 화면과 분위기를 보여 드리는 견본입니다. 고르시면 상태 정리 도구·진행 순서·자주 묻는 질문을 이 모양으로 이어 붙입니다.</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">(가상) 섬돌집고침 · 대표 박섬돌 · 충남 홍성군 · 010-0000-0000 · 사진은 Unsplash 참고 이미지 · <b>가상 업체 · 시연용</b></div></footer>
+<script>
+(function(){
+  var A={
+    parent:['시골 부모님 댁을 고치실 때',['손님 중에 시골에 부모님 집이 있는 자녀분들이 많습니다.','공사 중에는 사진을 찍어 카톡으로 보내 드립니다.','견적은 현장에 가서 보고 드리고, 현장 보러 가는 건 돈 받지 않습니다.']],
+    empty:['빈집을 고쳐 들어가실 때',['빈집 사기 전에 집 상태를 같이 봐 달라는 분도 계십니다. 그럴 때도 같이 가 드립니다.','귀농·귀촌하시는 분들의 빈집 고치는 일을 합니다.','홍성·예산·청양·보령까지 다닙니다.']],
+    mine:['지금 사시는 집을 고치실 때',['단열·창호·지붕, 재래식 부엌·화장실 입식, 기름보일러 교체를 합니다.','대표와 동생 두 사람이 다니고, 전기·설비는 아는 기술자분들과 같이 합니다.','현장 보러 가는 건 돈 받지 않습니다.']]
+  };
+  var bs=document.querySelectorAll('.choices button'),h=document.getElementById('ah'),l=document.getElementById('al');
+  function show(k){bs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.k===k?'true':'false')});h.textContent=A[k][0];l.innerHTML='';A[k][1].forEach(function(t){var li=document.createElement('li');li.textContent=t;l.appendChild(li)})}
+  bs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.k)})});
+  show('parent');
+})();
+</script>
+</body></html>
