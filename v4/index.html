@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ko"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8">
+
+<meta name="description" content="[가상 업체 · 시연용] 충남 홍성·예산·청양·보령 시골집 고치기. 농가주택 단열·창호·지붕, 재래식 부엌·화장실 입식 개조, 기름보일러 교체, 슬레이트 지붕 교체, 빈집 수리. 견적은 현장에 가서 보고 드림.">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="홍성 시골집 리모델링 (가상) 섬돌집고침 · 시연용">
+<meta property="og:description" content="가상 업체 시연용 페이지. 홍성·예산·청양·보령 농가주택 리모델링, 견적은 현장을 보고.">
+<meta property="og:url" content="https://ddggdd-dev.github.io/seomdol/v4/">
+<meta property="og:image" content="https://ddggdd-dev.github.io/seomdol/v4/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="처마 아래에서 내다본 흙벽 시골집 마당 (참고 이미지, 섬돌집고침이 고친 집 아님)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23C79A6B%22/%3E%3Cpath d=%22M5 15q11-8 22 0M9 14v11h14V14%22 fill=%22none%22 stroke=%22%232A1D14%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;800&amp;family=Gothic+A1:wght@400;600;700&amp;display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"(가상) 섬돌집고침","description":"[가상 업체 · 시연용] 실제로 영업하지 않는 시연용 업체입니다.","telephone":"+82-10-0000-0000","url":"https://ddggdd-dev.github.io/seomdol/v4/","image":"https://ddggdd-dev.github.io/seomdol/v4/img/og.jpg","founder":{"@type":"Person","name":"박섬돌"},"knowsAbout":["농가주택 리모델링","단열","창호 교체","지붕","재래식 부엌·화장실 입식 개조","기름보일러 교체","슬레이트 지붕 교체","빈집 수리"],"address":{"@type":"PostalAddress","addressRegion":"충청남도","addressLocality":"홍성군","addressCountry":"KR"},"areaServed":["홍성군","예산군","청양군","보령시"],"slogan":"오래된 집, 오래 살 집으로"}</script>
+<!-- 시범 운영 2 · 가상 업체 · v4 = v3(견본 C+B)의 첫 화면을 사진 중심으로 다시(2026-10-23 성식 "메인화면에 사진 넣고 감각적"), 고성식 선택 2026-10-23.
+     업체 정보는 reference/2026-10-22-카톡-첫연락.txt 에서만. 공공 제도는 벤치마킹/공공-지원사업.md 에서 이름·묻는 곳·링크만.
+     class="draft-only": 정보를 받기 전에는 운영 사이트에서 뺀다. .blank: 플레이스홀더. -->
+<style>
+/* 흙벽 황토 바탕의 큰 글자 첫 화면 + 그 안의 "누구 집인가요" 세 칸(C) → 진행 4단계 사진 띠(B) → 종이색 본문.
+   흙벽 황토(바탕) · 흙 갈색(글) · 솔잎 초록(주 버튼) · 한지 종이색(본문) */
+:root{
+  --clay:#C79A6B; --clay-2:#B88A5B; --earth:#2A1D14; --earth-2:#4A3626; --pine:#1F3B2D; --pine-2:#2C5240;
+  --paper:#F6EFE4; --card:#FFFBF4; --muted:#5E4A3A; --line:#DCCDB8; --gold:#E9B36E;
+  --display:"Hahmlet","Noto Serif KR","AppleMyungjo",serif; --sans:"Gothic A1","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --maxw:1180px; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--earth);font-family:var(--sans);font-size:18px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.025em;line-height:1.15}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:3px solid var(--pine);outline-offset:3px}
+.demo{background:#3B2A6B;color:#fff;text-align:center;font-size:.875rem;padding:8px 16px}
+.demo .short{display:none}
+
+/* 버튼 */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 26px;border-radius:999px;font:700 1.0625rem var(--sans);text-decoration:none;border:2px solid var(--earth);cursor:pointer;background:transparent;color:var(--earth)}
+.btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn.p{background:var(--pine);border-color:var(--pine);color:#fff}
+.btn.p:hover{background:var(--pine-2)}
+.tel-line b{font-size:1.25rem;white-space:nowrap;user-select:all;font-variant-numeric:tabular-nums}
+
+/* 1. 첫 화면: 대청 처마 아래에서 내다본 옛집 마당 사진이 화면을 채움. 글은 처마 그늘(왼쪽·아래)에. */
+.hero{position:relative;background:#1A120C;color:var(--paper);overflow:hidden}
+.hero-photo{position:absolute;inset:0;margin:0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:30% 60%;transform:scale(1.06);animation:settle 1.8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-photo::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(26,18,12,.9) 0%,rgba(26,18,12,.78) 34%,rgba(26,18,12,.4) 56%,rgba(26,18,12,0) 72%),
+  linear-gradient(0deg,rgba(26,18,12,.85) 0%,rgba(26,18,12,0) 42%),
+  linear-gradient(180deg,rgba(26,18,12,.55) 0%,rgba(26,18,12,0) 22%)}
+@keyframes settle{to{transform:scale(1)}}
+.hero-note{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:96px;z-index:2;font-size:.8125rem;color:#fff;background:rgba(0,0,0,.5);padding:2px 8px}
+.top{position:relative;z-index:3}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;min-height:76px}
+.logo{display:inline-flex;align-items:center;min-height:44px;font-family:var(--display);font-weight:800;font-size:1.5rem;text-decoration:none;color:var(--paper)}
+.logo small{font-family:var(--sans);font-weight:400;font-size:.8125rem;margin-left:6px;opacity:.85}
+.menu{display:flex;gap:2px}
+.menu a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:1rem;font-weight:600;color:var(--paper);opacity:.9}
+.menu a:hover{opacity:1}
+.top-tel{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid rgba(246,239,228,.5);border-radius:999px;font-weight:700;text-decoration:none;white-space:nowrap;color:var(--paper)}
+.hero-body{position:relative;z-index:2;min-height:clamp(560px,86vh,860px);display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:72px}
+.hero-body>div{max-width:620px;animation:rise 1s .25s both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.where{font-weight:600;color:var(--paper);margin-bottom:18px;letter-spacing:.02em;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero h1{font-size:clamp(2.6rem,6vw,5.4rem);color:#FBF5EA;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero .sub{margin-top:22px;font-size:1.0625rem;max-width:28em;color:#EADFCF;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;align-items:center}
+.hero .btn.p{background:var(--gold);border-color:var(--gold);color:var(--earth)}
+.hero .btn.p:hover{background:#F2C389}
+.hero .btn.g{border-color:rgba(246,239,228,.7);color:var(--paper)}
+.hero .tel-line{margin-top:14px;color:#EADFCF}
+.hero .tel-line b{color:#FBF5EA}
+
+/* 1-1. 누구 집인가요: 사진 바로 아래, 위로 겹쳐 올라온 띠 */
+.askband{position:relative;z-index:4;margin-top:-48px}
+.ask{background:var(--card);border-radius:18px;padding:32px 36px;box-shadow:0 24px 60px rgba(42,29,20,.22);display:grid;grid-template-columns:1fr 1.15fr;gap:20px 40px;align-items:start}
+.ask>div:first-child{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px}
+.ask>*{min-width:0}
+.ask h2{font-size:clamp(1.6rem,2.6vw,2.1rem);color:var(--earth)}
+.ask .lead{color:var(--muted);font-size:1rem}
+.choices{display:grid;gap:10px}
+.choices button{font:inherit;text-align:left;cursor:pointer;background:var(--paper);border:2px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:2px;color:var(--earth);min-height:72px;align-content:start}
+.choices b{font-family:var(--display);font-weight:800;font-size:1.1875rem}
+.choices span{font-size:.9375rem;color:var(--muted)}
+.choices button[aria-pressed="true"]{border-color:var(--pine);background:#EEF3EE;box-shadow:inset 0 0 0 1px var(--pine)}
+.answer{border-left:2px solid var(--earth);padding:6px 0 6px 28px;display:grid;gap:10px;align-content:start}
+.answer h3{font-size:1.0625rem}
+.answer ul{margin:0;padding-left:1.15em;display:grid;gap:4px;font-size:1rem}
+.answer a{font-weight:700;color:var(--pine);display:inline-flex;align-items:center;min-height:44px}
+
+/* 2. 진행 4단계 사진 띠 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);list-style:none;margin:0;padding:0;background:var(--earth);color:var(--paper);counter-reset:s}
+.steps li{position:relative;counter-increment:s;min-width:0;overflow:hidden}
+.steps img{width:100%;aspect-ratio:3/4;object-fit:cover;opacity:.85}
+.steps .cap{position:absolute;left:0;right:0;bottom:0;padding:64px 20px 20px;background:linear-gradient(0deg,rgba(42,29,20,.94),rgba(42,29,20,0))}
+.steps .cap::before{content:counter(s);display:block;font-family:var(--display);font-size:2.4rem;font-weight:800;line-height:1;color:var(--gold)}
+.steps h3{margin:8px 0 2px;font-size:1.25rem}
+.steps p{font-size:.9375rem;color:#EADFCF}
+.tag{position:absolute;top:10px;left:10px;z-index:1;font-size:.8125rem;color:#fff;background:rgba(0,0,0,.55);padding:1px 7px}
+.steps-note{background:var(--earth);color:#D8C8B3;font-size:.875rem;padding-block:10px}
+
+/* 섹션 공통 */
+.sec{padding-block:96px}
+.sec.card-bg{background:var(--card)}
+.head{max-width:40em;margin-bottom:40px;display:grid;gap:12px}
+.head h2{font-size:clamp(1.9rem,3.6vw,2.8rem)}
+.head p{color:var(--muted)}
+
+/* 3. 하는 일 */
+.jobs{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:start}
+.jobs>*{min-width:0}
+.jobs figure{margin:0;position:relative}
+.jobs figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.job-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--earth)}
+.job-list li{display:grid;grid-template-columns:1fr auto;gap:2px 20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.job-list h3{font-size:1.25rem;font-weight:700}
+.job-list p{grid-column:1;color:var(--muted);font-size:1rem}
+.job-list a{grid-row:1/span 2;grid-column:2;display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--pine);text-decoration:none;white-space:nowrap;font-size:.9375rem}
+.with{margin-top:20px;color:var(--muted)}
+
+/* 4. 우리 집 상태 정리 (업종 전용 기능) */
+.tool{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.tool>*{min-width:0}
+.tool-in{display:grid;gap:28px}
+.field{display:grid;gap:10px;border:0;margin:0;padding:0;min-width:0}
+.field legend,.field>span{font-weight:700;font-size:1.0625rem;padding:0;margin-bottom:10px}
+.field legend small{font-weight:400;color:var(--muted);font-size:.9375rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;margin:0}
+.chips span{display:inline-flex;align-items:center;min-height:48px;padding:0 16px;border:1.5px solid var(--earth-2);border-radius:999px;background:var(--card);font-size:1rem;cursor:pointer}
+.chips input:checked+span{background:var(--pine);border-color:var(--pine);color:#fff;font-weight:700}
+.chips input[type=checkbox]:checked+span::before{content:"✓";margin-right:6px}
+.chips input:focus-visible+span{outline:3px solid var(--pine);outline-offset:2px}
+.tool input[type=text],.tool textarea{font:inherit;font-size:1.0625rem;color:var(--earth);background:var(--card);border:1.5px solid var(--earth-2);border-radius:10px;padding:12px 14px;min-height:52px;width:100%}
+.tool textarea{min-height:96px;resize:vertical}
+.tool-out{background:var(--card);border-radius:16px;border:2px solid var(--earth);padding:28px;display:grid;gap:20px;position:sticky;top:16px}
+.tool-out h3{font-size:1.1875rem}
+.tool-out pre{margin:0;white-space:pre-wrap;font:inherit;font-size:1.0625rem;line-height:1.8;background:var(--paper);border-radius:10px;padding:16px}
+.out-btns{display:flex;flex-wrap:wrap;gap:10px}
+.out-btns .btn{flex:1 1 180px}
+.copied{font-size:.9375rem;color:var(--pine);min-height:1.5em}
+.note{font-size:.9375rem;color:var(--muted)}
+.aid{display:grid;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.aid li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
+.aid b{font-size:1.0625rem}
+.aid span{font-size:.9375rem;color:var(--muted)}
+.aid a{display:inline-flex;align-items:center;min-height:44px;font-size:1rem;font-weight:700;color:var(--pine)}
+.jump{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--pine)}
+
+/* 5. 빈집 사기 전에 + 누가 고치나요 */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.duo>*{min-width:0}
+.quote{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.75rem);font-weight:500;line-height:1.55;border-left:4px solid var(--clay);padding-left:20px;margin:0}
+.quote cite{display:block;margin-top:10px;font-family:var(--sans);font-style:normal;font-size:1rem;color:var(--muted)}
+.facts{list-style:none;margin:0;padding:0;border-top:2px solid var(--earth)}
+.facts li{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts .t{color:var(--muted);font-size:1rem}
+.facts .v{font-weight:600}
+.facts .v small{display:block;font-weight:400;color:var(--muted);font-size:1rem}
+.todo{margin-top:20px;display:grid;gap:8px;border:1.5px dashed var(--clay-2);border-radius:12px;padding:20px;background:var(--card)}
+
+/* 진행·비용 */
+.cost{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cost>div{background:var(--card);border-radius:14px;padding:24px;border:1px solid var(--line)}
+.cost .t{color:var(--muted)}
+.cost .big{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,3vw,2.1rem);margin-top:4px}
+.price{width:100%;border-collapse:collapse;margin-top:24px;font-variant-numeric:tabular-nums}
+.price caption{text-align:left;font-weight:700;padding-bottom:10px}
+.price th,.price td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line);font-size:1rem}
+.price th{color:var(--muted);font-weight:600;font-size:.9375rem}
+
+/* FAQ */
+.faq{max-width:880px;border-top:2px solid var(--earth)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 44px 20px 0;font-weight:700;font-size:1.125rem;position:relative;min-height:48px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);color:var(--pine);font-size:1.6rem;font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq .a{color:var(--muted);padding-bottom:20px;display:grid;gap:8px;max-width:44em}
+.faq .a a{color:var(--pine);font-weight:700}
+
+/* 문의 */
+.contact{background:var(--clay);background-image:radial-gradient(rgba(42,29,20,.07) 1px,transparent 1.4px);background-size:7px 7px}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end;padding-block:88px}
+.contact .wrap>*{min-width:0}
+.contact h2{font-size:clamp(2.2rem,5vw,4rem)}
+.big-tel{display:inline-block;margin-top:20px;padding-block:6px;font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,6vw,3.4rem);text-decoration:none;white-space:nowrap;user-select:all;font-variant-numeric:tabular-nums}
+.after{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:6px}
+.after li{display:grid;grid-template-columns:96px 1fr;gap:10px}
+.after b{font-weight:700}
+.contact .cta{display:flex;flex-wrap:wrap;gap:12px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.links span{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1.5px solid var(--earth);border-radius:999px}
+.foot{background:var(--earth);color:#D8C8B3;font-size:.9375rem;padding-block:40px calc(40px + 8px)}
+.foot .wrap{display:grid;gap:6px}
+.foot b{color:#fff}
+
+.blank{display:inline-block;min-width:3.5em;background:rgba(232,137,47,.22);outline:1.5px dashed #E8892F;outline-offset:-1px;padding:0 .4em;border-radius:3px;color:inherit}
+.callbar{display:none}
+
+@media (max-width:980px){
+  .menu{display:none}
+  .ask{grid-template-columns:1fr}
+  .answer{border-left:0;border-top:2px solid var(--earth);padding:14px 0 0}
+  .steps{grid-template-columns:1fr 1fr}
+  .jobs,.tool,.duo,.contact .wrap{grid-template-columns:1fr;gap:32px}
+  .tool-out{position:static}
+}
+@media (max-width:620px){
+  .demo .long{display:none}.demo .short{display:inline}
+  .top-tel{font-size:.9375rem}
+  .sec{padding-block:64px}
+  .hero .btn,.contact .btn{flex:1 1 100%}
+  .ask{padding:20px}
+  .choices{grid-template-columns:1fr}
+  .choices button{min-height:0}
+  .hero-photo{position:relative;aspect-ratio:4/5;margin-bottom:-2px}
+  .hero-photo::after{inset:0 0 -1px}
+  .hero-photo::after{background:linear-gradient(0deg,rgba(26,18,12,1) 0%,rgba(26,18,12,.7) 22%,rgba(26,18,12,0) 50%),linear-gradient(180deg,rgba(26,18,12,.6) 0%,rgba(26,18,12,0) 20%)}
+  .top{position:absolute;top:0;left:0;right:0}
+  .hero-body{min-height:0;margin-top:-34vw;padding-bottom:64px}
+  .hero-note{top:84px;bottom:auto}
+  .askband{margin-top:-24px}
+  .hero .btn.g{display:none}
+  .hero-body{padding-bottom:48px}
+  .menu{display:none}
+  .cost{grid-template-columns:1fr}
+  .facts li{grid-template-columns:1fr;gap:2px}
+  .contact .wrap{padding-block:56px}
+  .after li{grid-template-columns:1fr;gap:0}
+  .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(42,29,20,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);padding-bottom:env(safe-area-inset-bottom,0px);transform:translateY(110%);transition:transform .2s}
+  .callbar.show{transform:none}
+  .callbar a{display:flex;justify-content:center;align-items:center;gap:8px;min-height:58px;color:#fff;text-decoration:none;font-weight:700;font-size:1.0625rem}
+  .callbar b{color:var(--gold);font-variant-numeric:tabular-nums}
+  body{padding-bottom:60px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.callbar{transition:none}.hero-photo img{animation:none;transform:none}.hero-body>div{animation:none}}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>홍성 시골집 리모델링 (가상) 섬돌집고침 · 시연용</title></head><body><div class="demo" role="note">가상 업체 · 시연용 <span class="long">— 실제로 영업하지 않는 업체입니다. 이름·번호·내용은 모두 시연을 위해 만든 것이에요.</span><span class="short">— 실제 업체가 아닙니다</span></div>
+
+<main id="top">
+<!-- 1. 첫 화면 -->
+<section class="hero" aria-labelledby="h1">
+  <figure class="hero-photo">
+    <picture><source media="(max-width:620px)" srcset="img/hero4m.jpg"><img src="img/hero4.jpg" alt="처마 아래에서 내다본 옛 시골집 마당과 기와지붕 (참고 이미지)" width="1920" height="1200" fetchpriority="high"></picture>
+  </figure>
+  <span class="hero-note">참고 이미지 · 저희가 고친 집 아님</span>
+  <header class="top"><div class="wrap">
+    <a class="logo" href="#top">섬돌집고침<small>(가상)</small></a>
+    <nav class="menu" aria-label="메뉴"><a href="#jobs">하는 일</a><a href="#tool">우리 집 정리</a><a href="#process">진행</a><a href="#faq">자주 묻는 질문</a></nav>
+    <a class="top-tel" href="tel:010-0000-0000" data-track="call" data-where="header">010-0000-0000</a>
+  </div></header>
+  <div class="wrap hero-body">
+    <div>
+      <p class="where">충남 홍성에서 시골집 고치기 15년 · 예산·청양·보령까지</p>
+      <h1 id="h1">오래된 집,<br>오래 살 집으로</h1>
+      <p class="sub">단열·창호·지붕, 재래식 부엌·화장실 입식으로, 기름보일러 교체. 견적은 현장에 가서 보고 드립니다.</p>
+      <div class="cta">
+        <a class="btn p" id="hero-call" href="tel:010-0000-0000" data-track="call" data-where="hero"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>전화 상담</a>
+        <a class="btn g" href="#ask-h">누구 집인지 고르기</a>
+      </div>
+      <p class="tel-line">전화 <b>010-0000-0000</b> · 일요일은 쉽니다</p>
+    </div>
+  </div>
+</section>
+
+<div class="askband"><div class="wrap">
+  <div class="ask" aria-labelledby="ask-h">
+    <div>
+      <h2 id="ask-h">누구 집을 고치시나요?</h2>
+      <p class="lead">고르시면 그 경우에 맞는 안내가 나옵니다.</p>
+    </div>
+    <div class="choices" role="group" aria-label="누구 집인가요">
+      <button type="button" data-k="parent" aria-pressed="true"><b>부모님 댁</b><span>멀리 살면서 시골 부모님 집을</span></button>
+      <button type="button" data-k="empty" aria-pressed="false"><b>귀농·귀촌할 빈집</b><span>빈집을 사거나 고쳐서 들어가려고</span></button>
+      <button type="button" data-k="mine" aria-pressed="false"><b>지금 사는 집</b><span>혼자 사시는 어르신 댁도</span></button>
+    </div>
+    <div class="answer" aria-live="polite">
+      <h3 id="ah"></h3>
+      <ul id="al"></ul>
+      <a href="#tool" id="ago">이 경우로 상담 내용 정리하기</a>
+    </div>
+  </div>
+</div></div>
+
+<div style="height:72px"></div>
+<!-- 2. 진행 순서 (사진 띠) -->
+<ol class="steps" id="process" aria-label="진행 순서">
+  <li><img src="img/c-ceiling.jpg" alt="낡아 드러난 천장 들보 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>전화</h3><p>집 위치와 고칠 곳을 알려 주세요.</p></div></li>
+  <li><img src="img/c-hands.jpg" alt="나무판에 연필로 선을 긋는 손 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>현장 보기</h3><p>직접 가서 봅니다. 돈 받지 않습니다.</p></div></li>
+  <li><img src="img/c-rafters.jpg" alt="서까래 천장 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>견적</h3><p>현장을 보고 견적을 드립니다.</p></div></li>
+  <li><img src="img/c-hanok.jpg" alt="창호와 마루가 있는 한옥 (참고 이미지)" width="1200" height="800" loading="lazy"><span class="tag">참고 이미지</span><div class="cap"><h3>공사·사진 소식</h3><p>공사 중 사진을 카톡으로 보내 드립니다.</p></div></li>
+</ol>
+<div class="steps-note"><div class="wrap">사진은 모두 무료 참고 이미지입니다. 섬돌집고침의 현장이 아닙니다.</div></div>
+
+<!-- 3. 하는 일 -->
+<section class="sec" id="jobs" aria-labelledby="jobs-h">
+  <div class="wrap jobs">
+    <figure><img src="img/c-oldhouse.jpg" alt="흰 회벽과 기와지붕의 오래된 시골집 마당 (참고 이미지)" width="1800" height="1200" loading="lazy"><span class="tag">참고 이미지 · 저희가 고친 집 아님</span></figure>
+    <div>
+      <div class="head"><h2 id="jobs-h">시골집에서 주로 고치는 다섯 가지</h2></div>
+      <ul class="job-list">
+        <li><h3>농가주택 리모델링</h3><p>단열, 창호 교체, 지붕</p><a href="#tool" data-job="cold">이 일로 정리</a></li>
+        <li><h3>재래식 부엌·화장실을 입식으로</h3><a href="#tool" data-job="kitchen">이 일로 정리</a></li>
+        <li><h3>기름보일러 교체</h3><a href="#tool" data-job="boiler">이 일로 정리</a></li>
+        <li><h3>슬레이트 지붕 교체</h3><p>슬레이트 철거는 허가받은 업체가 하고, 섬돌집고침은 새 지붕을 올립니다.</p><a href="#tool" data-job="slate">이 일로 정리</a></li>
+        <li><h3>빈집 고쳐서 들어가기</h3><p>귀농·귀촌하시는 분들</p><a href="#tool" data-job="empty">이 일로 정리</a></li>
+      </ul>
+      <p class="with">전기·설비는 아는 기술자분들을 불러 같이 합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 우리 집 상태 정리 -->
+<section class="sec card-bg" id="tool" aria-labelledby="tool-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="tool-h">세 가지만 고르면 상담 내용이 정리돼요</h2>
+      <p>고른 내용에 맞춰, 고치기 전에 확인해 볼 만한 공공 제도와 묻는 곳도 함께 보여 드립니다.</p>
+      <p><a class="jump" href="#result">결과 바로 보기 ↓</a></p>
+    </div>
+    <div class="tool">
+      <form class="tool-in" id="form" onsubmit="return false">
+        <fieldset class="field"><legend>1. 누구 집인가요?</legend>
+          <div class="chips">
+            <label><input type="radio" name="whose" value="parent" checked=""><span>부모님 댁</span></label>
+            <label><input type="radio" name="whose" value="farm"><span>귀농해서 살 집</span></label>
+            <label><input type="radio" name="whose" value="buy"><span>귀촌해서 살 집</span></label>
+            <label><input type="radio" name="whose" value="me"><span>지금 사는 우리 집</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field"><legend>2. 집이 어디에 있나요?</legend>
+          <div class="chips">
+            <label><input type="radio" name="area" value="홍성군" checked=""><span>홍성</span></label>
+            <label><input type="radio" name="area" value="예산군"><span>예산</span></label>
+            <label><input type="radio" name="area" value="청양군"><span>청양</span></label>
+            <label><input type="radio" name="area" value="보령시"><span>보령</span></label>
+            <label><input type="radio" name="area" value="other"><span>그 밖의 지역</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field"><legend>3. 무엇을 고치고 싶으세요? <small>(여러 개 골라도 돼요)</small></legend>
+          <div class="chips">
+            <label><input type="checkbox" name="need" value="cold" checked=""><span>겨울에 춥다 (단열·창호)</span></label>
+            <label><input type="checkbox" name="need" value="kitchen"><span>부엌·화장실이 재래식</span></label>
+            <label><input type="checkbox" name="need" value="boiler"><span>기름보일러 교체</span></label>
+            <label><input type="checkbox" name="need" value="slate"><span>슬레이트 지붕</span></label>
+            <label><input type="checkbox" name="need" value="empty"><span>빈집 고쳐서 들어가기</span></label>
+            <label><input type="checkbox" name="need" value="check"><span>사기 전에 상태 보기</span></label>
+            <label><input type="checkbox" name="need" value="unknown"><span>잘 모르겠어요</span></label>
+          </div>
+        </fieldset>
+        <label class="field"><span>집 위치 (면·마을 이름, 선택)</span><input type="text" id="where" placeholder="예: 홍성군 ○○면 ○○리" autocomplete="off"></label>
+        <label class="field"><span>하고 싶은 말 (선택)</span><textarea id="memo" placeholder="예: 지은 지 오래된 흙집이고, 겨울에 외풍이 심해요"></textarea></label>
+      </form>
+      <div class="tool-out" id="result" aria-live="polite">
+        <h3>정리된 상담 내용</h3>
+        <pre id="msg"></pre>
+        <div class="out-btns">
+          <button class="btn p" type="button" id="copy" data-track="copy" data-where="tool">내용 복사</button>
+          <a class="btn" href="tel:010-0000-0000" data-track="call" data-where="tool">전화 상담</a>
+        </div>
+        <p class="copied" id="copied" role="status"></p>
+        <p class="draft-only note"><span class="blank">문자로 문의 받으시는지 확인 후 "문자로 보내기" 버튼</span></p>
+        <div>
+          <h3 style="margin-bottom:10px">고치기 전에 확인해 볼 공공 제도</h3>
+          <ul class="aid" id="aid"></ul>
+          <p class="note" style="margin-top:10px">해당되는지, 얼마인지, 올해 접수하는지는 해마다 바뀌고 시·군마다 달라요. 꼭 시·군청이나 읍·면사무소에 확인하세요. 섬돌집고침이 지원 여부를 정하거나 약속하지 않습니다. (공식 누리집 기준, 2026-10-22 확인)</p>
+        </div>
+        <p class="note">입력한 내용은 이 화면에서만 쓰이고 어디에도 저장되지 않습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 빈집 사기 전에 · 누가 고치나요 -->
+<section class="sec" id="who" aria-labelledby="who-h">
+  <div class="wrap duo">
+    <div id="before">
+      <div class="head"><h2>빈집 사기 전에, 같이 가 드립니다</h2></div>
+      <blockquote class="quote">"빈집 사기 전에 집 상태 같이 봐 달라는 분도 계신데, 그것도 같이 가 드립니다."<cite>— 박섬돌 대표</cite></blockquote>
+      <div class="todo draft-only">
+        <p><b>사장님께 확인 후 채울 내용</b></p>
+        <p>비용: <span class="blank">무료 / ○만원</span> · 보는 곳: <span class="blank">지붕·기둥·바닥·습기·화장실·보일러 등</span></p>
+        <p>드리는 것: <span class="blank">말로 설명 / 사진 메모 / 대략 비용 범위</span></p>
+      </div>
+      <blockquote class="quote" style="margin-top:40px">"공사 중에는 사진 찍어서 카톡으로 보내 드려요. 멀리 사시는 자녀분들이 좋아하십니다."<cite>— 박섬돌 대표</cite></blockquote>
+    </div>
+    <div>
+      <div class="head"><h2 id="who-h">대표와 동생, 두 사람이 다닙니다</h2></div>
+      <ul class="facts">
+        <li><span class="t">대표</span><span class="v">박섬돌</span></li>
+        <li><span class="t">함께 일하는 사람</span><span class="v">대표의 동생 <span class="blank draft-only">이름</span><small>전기·설비는 아는 기술자분들과 같이 합니다</small></span></li>
+        <li><span class="t">경력</span><span class="v">시골집 고치는 일 15년째</span></li>
+        <li><span class="t">다니는 곳</span><span class="v">홍성 · 예산 · 청양 · 보령</span></li>
+        <li><span class="t">쉬는 날</span><span class="v">일요일</span></li>
+        <li class="draft-only"><span class="t">사업자등록번호</span><span class="v"><span class="blank">000-00-00000</span></span></li>
+        <li class="draft-only"><span class="t">면허</span><span class="v"><span class="blank">실내건축공사업 등 보유 여부</span></span></li>
+        <li class="draft-only"><span class="t">보험</span><span class="v"><span class="blank">영업배상책임보험 가입 여부·한도</span></span></li>
+        <li class="draft-only"><span class="t">A/S</span><span class="v"><span class="blank">공사 후 하자 처리 기준</span></span></li>
+      </ul>
+      <p class="draft-only" style="margin-top:16px"><span class="blank">두 분 사진 (작업복, 현장) — 참고 이미지로 대신하지 않음</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 비용 -->
+<section class="sec card-bg" aria-labelledby="cost-h">
+  <div class="wrap">
+    <div class="head"><h2 id="cost-h">현장을 보고 나서 견적을 드립니다</h2></div>
+    <div class="cost">
+      <div><p class="t">견적 보러 현장에 가는 비용</p><p class="big">받지 않습니다</p></div>
+      <div><p class="t">견적</p><p class="big">현장을 보고</p></div>
+    </div>
+    <div class="draft-only">
+      <table class="price">
+        <caption>자주 하는 공사의 비용·기간 (범위)</caption>
+        <thead><tr><th scope="col">공사</th><th scope="col">비용 범위</th><th scope="col">보통 기간</th></tr></thead>
+        <tbody>
+          <tr><td>재래식 화장실 입식 개조</td><td><span class="blank">○백만~○백만 원</span></td><td><span class="blank">○일</span></td></tr>
+          <tr><td>기름보일러 교체</td><td><span class="blank">○백만 원~</span></td><td><span class="blank">○일</span></td></tr>
+          <tr><td>슬레이트 지붕 교체 (철거 별도)</td><td><span class="blank">○백만~</span></td><td><span class="blank">○일</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 고친 집 (받기 전) -->
+<section class="sec draft-only" id="cases" aria-labelledby="cases-h">
+  <div class="wrap">
+    <div class="head"><h2 id="cases-h">홍성·예산·청양·보령에서 고친 집</h2></div>
+    <p class="todo"><span class="blank">고치기 전·후 사진 + 날짜 · 면 단위 지역 · 공사 범위(배관·전기 포함 여부) · 기간 · 비용 범위, 3건</span></p>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="sec" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="head"><h2 id="faq-h">맡기기 전에 많이 물어보세요</h2></div>
+    <div class="faq">
+      <details><summary>도시에 사는데, 시골 부모님 댁 공사를 맡겨도 되나요?</summary><div class="a"><p>손님 중에 시골에 부모님 집이 있는 자녀분들이 많습니다. 공사 중에는 사진을 찍어 카톡으로 보내 드립니다.</p></div></details>
+      <details><summary>견적 받으려면 돈이 드나요?</summary><div class="a"><p>현장 보러 가는 건 돈 받지 않습니다. 견적은 현장을 보고 드립니다.</p></div></details>
+      <details><summary>어디까지 오시나요?</summary><div class="a"><p>홍성, 예산, 청양, 보령까지 다닙니다.</p><p class="draft-only">그 밖의 지역: <span class="blank">가능 여부 확인</span></p></div></details>
+      <details><summary>슬레이트 지붕도 철거해 주시나요?</summary><div class="a"><p>슬레이트 철거는 허가받은 업체가 하고, 섬돌집고침은 새 지붕을 올립니다.</p><p>참고로, 법에서는 석면이 든 슬레이트를 고용노동부에 등록된 석면해체·제거업체가 해체·제거해야 하는 경우가 있습니다(산업안전보건법 제122조). 철거·처리 비용을 지원하는 "슬레이트 처리 지원사업"은 집이 있는 시·군청에 문의하세요. <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148930753" target="_blank" rel="noopener">제도 설명 (대한민국 정책브리핑)</a></p></div></details>
+      <details><summary>지원금을 받을 수 있나요?</summary><div class="a"><p>지원 여부는 시·군청이 정합니다. 위의 "상담 내용 정리"에서 고르시면, 확인해 볼 제도 이름과 묻는 곳, 공식 안내 링크를 보여 드립니다.</p></div></details>
+      <details><summary>일요일에도 오시나요?</summary><div class="a"><p>일요일은 쉽니다.</p></div></details>
+      <details class="draft-only"><summary>공사 끝나고 문제가 생기면요?</summary><div class="a"><p><span class="blank">A/S(하자 처리) 기준 — 사장님 확인 후 작성</span></p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. 연락 -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div>
+      <h2 id="contact-h">오래된 집,<br>오래 살 집으로</h2>
+      <a class="big-tel" href="tel:010-0000-0000" data-track="call" data-where="contact">010-0000-0000</a>
+      <ul class="after">
+        <li><b>대표</b><span>박섬돌</span></li>
+        <li><b>다니는 곳</b><span>홍성 · 예산 · 청양 · 보령</span></li>
+        <li><b>비용</b><span>현장 보러 가는 건 받지 않음, 견적은 현장을 보고</span></li>
+        <li><b>쉬는 날</b><span>일요일</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="cta"><a class="btn p" href="tel:010-0000-0000" data-track="call" data-where="contact-btn">전화 상담</a><a class="btn" href="#tool">상담 내용 정리하기</a></div>
+      <div class="links draft-only"><span><span class="blank">네이버 플레이스</span></span><span><span class="blank">당근 동네업체</span></span><span><span class="blank">카카오톡 채널</span></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <p><b>(가상) 섬돌집고침</b> · 대표 박섬돌 · 충남 홍성군 · 010-0000-0000</p>
+  <p>사진: Unsplash 무료 사진(참고 이미지). 저희가 고친 집이 아닙니다.</p>
+  <p>공공 제도 안내: 각 기관 공식 누리집 기준 2026-10-22 확인. 해마다 바뀌니 시·군청에 확인하세요.</p>
+  <p>마지막 업데이트 2026-10-23</p>
+  <p><b>가상 업체 · 시연용</b> — ddggdd-dev 홈페이지 제작 시범 운영. 실제로 영업하지 않는 업체이며 전화번호는 연결되지 않습니다.</p>
+</div></footer>
+
+<div class="callbar" id="callbar"><a href="tel:010-0000-0000" tabindex="-1" data-track="call" data-where="callbar">전화 상담 <b>010-0000-0000</b></a></div>
+
+<script>
+(function(){
+  /* 첫 화면 질문: 받은 자료의 사실만 */
+  var A={
+    parent:['시골 부모님 댁을 고치실 때',['손님 중에 시골에 부모님 집이 있는 자녀분들이 많습니다.','공사 중에는 사진을 찍어 카톡으로 보내 드립니다.','현장 보러 가는 건 돈 받지 않습니다.'],'parent'],
+    empty:['빈집을 고쳐 들어가실 때',['빈집 사기 전에 집 상태를 같이 봐 달라는 분도 계십니다. 그럴 때도 같이 가 드립니다.','귀농·귀촌하시는 분들의 빈집 고치는 일을 합니다.','홍성·예산·청양·보령까지 다닙니다.'],null,['empty','check']],
+    mine:['지금 사시는 집을 고치실 때',['혼자 사시는 어르신 손님도 많습니다.','단열·창호·지붕, 재래식 부엌·화장실 입식, 기름보일러 교체를 합니다.','견적은 현장에 가서 보고 드립니다.'],'me']
+  };
+  var bs=document.querySelectorAll('.choices button'),h=document.getElementById('ah'),l=document.getElementById('al'),cur='parent';
+  function show(k){cur=k;bs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.k===k?'true':'false')});h.textContent=A[k][0];l.innerHTML='';A[k][1].forEach(function(t){var li=document.createElement('li');li.textContent=t;l.appendChild(li)})}
+  bs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.k)})});
+  show('parent');
+
+  /* 상담 내용 정리 + 공공 제도 */
+  var NEED={cold:'단열·창호 (겨울에 추움)',kitchen:'재래식 부엌·화장실 입식으로',boiler:'기름보일러 교체',slate:'슬레이트 지붕 교체',empty:'빈집 고쳐서 들어가기',check:'사기 전에 집 상태 보기',unknown:'어디부터 고칠지 잘 모르겠어요'};
+  var WHOSE={'':'귀농·귀촌해서 살 집입니다.',farm:'귀농해서 살 집입니다.',buy:'귀촌해서 살 집입니다.',parent:'시골 부모님 댁 일로 연락드립니다.',me:'지금 살고 있는 집입니다.'};
+  var AID=[
+    {when:function(s){return s.n.slate;},name:'슬레이트 처리 지원사업',where:'집이 있는 시·군청 (기후에너지환경부·지자체)',url:'https://www.korea.kr/news/policyNewsView.do?newsId=148930753',src:'대한민국 정책브리핑'},
+    {when:function(s){return s.n.cold||s.n.kitchen||s.n.empty||s.n.check;},name:'농촌주택개량사업 (노후 주택 고치기·짓기 융자)',where:'시·군 공고 확인 후 읍·면사무소 (농림축산식품부)',url:'https://www.easylaw.go.kr/CSP/CSP/OnhunqueansInfoRetrieve.laf?onhunqnaAstSeq=84&onhunqueSeq=6103&recommandType=1&targetRow=1',src:'찾기쉬운 생활법령정보'},
+    {when:function(s){return s.n.empty||s.n.check;},name:'농촌 빈집은행 (지원금 아님 · 빈집 매매·임대 정보)',where:'참여 시·군인지 먼저 확인 (농림축산식품부)',url:'https://www.mafra.go.kr/bbs/home/792/578268/artclView.do',src:'농림축산식품부 보도자료'},
+    {when:function(s){return s.n.cold||s.n.boiler;},name:'저소득층 에너지효율개선사업 (단열·창호·보일러)',where:'주소지 읍·면·동 행정복지센터 · 기초생활수급·차상위 가구 등',url:'https://www.korea.kr/news/policyNewsView.do?newsId=148960236',src:'대한민국 정책브리핑'},
+    {when:function(s){return s.area==='홍성군'&&s.whose==='farm'&&Object.keys(s.n).length>0;},name:'홍성군 귀농인 정주환경 개선지원 (귀농인 대상)',where:'홍성군농업기술센터 · 올해 시행 여부 확인',url:'https://www.hongseong.go.kr/farm/sub04_0101.do',src:'홍성군 농업기술센터'},
+    {when:function(s){return s.area==='청양군'&&s.whose==='farm'&&Object.keys(s.n).length>0;},name:'청양군 귀농 주택구입자금 융자 (귀농인 대상)',where:'청양군농업기술센터 귀농귀촌팀 · 올해 시행 여부 확인',url:'https://www.cheongyang.go.kr/return/sub03_02.do',src:'청양군 귀농귀촌'}
+  ];
+  var f=document.getElementById('form'),msg=document.getElementById('msg'),aid=document.getElementById('aid'),copied=document.getElementById('copied');
+  function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:'';}
+  function state(){var n={};f.querySelectorAll('input[name="need"]:checked').forEach(function(e){n[e.value]=true;});return {whose:val('whose'),area:val('area'),n:n};}
+  function build(){
+    var s=state(),where=document.getElementById('where').value.trim(),memo=document.getElementById('memo').value.trim();
+    var L=['[섬돌집고침 상담 문의]',WHOSE[s.whose]];
+    L.push('지역: '+(s.area==='other'?'홍성·예산·청양·보령 밖입니다. 와 주실 수 있는지 궁금합니다.':s.area)+(where?' ('+where+')':''));
+    var picked=Object.keys(s.n).map(function(k){return NEED[k];});
+    L.push('고치고 싶은 곳: '+(picked.length?picked.join(', '):'아직 정하지 못했어요'));
+    if(memo) L.push('하고 싶은 말: '+memo);
+    L.push('현장 보러 오실 수 있는 날을 상의하고 싶습니다.');
+    var text=L.join('\n'); msg.textContent=text; copied.textContent='';
+    aid.innerHTML='';
+    var hits=AID.filter(function(a){return a.when(s);});
+    if(!hits.length){var p=document.createElement('li');p.textContent='고치고 싶은 곳을 고르면 확인해 볼 제도가 나와요.';aid.appendChild(p);}
+    hits.forEach(function(a){var li=document.createElement('li');var b=document.createElement('b');b.textContent=a.name;var sp=document.createElement('span');sp.textContent='묻는 곳: '+a.where;var lk=document.createElement('a');lk.href=a.url;lk.target='_blank';lk.rel='noopener';lk.textContent='공식 안내 보기 ('+a.src+')';li.appendChild(b);li.appendChild(sp);li.appendChild(lk);aid.appendChild(li);});
+    return text;
+  }
+  function setWhose(v){var r=f.querySelector('input[name="whose"][value="'+v+'"]');if(r){r.checked=true;build();}}
+  f.addEventListener('input',build);f.addEventListener('change',build);
+  document.getElementById('ago').addEventListener('click',function(ev){if(window.innerWidth<=620){ev.preventDefault();setTimeout(function(){document.getElementById('result').scrollIntoView({behavior:'smooth'});},0);}var a=A[cur];if(a[3]){f.querySelectorAll('input[name="need"]').forEach(function(e){e.checked=a[3].indexOf(e.value)>=0;});}if(a[2])setWhose(a[2]);else{f.querySelectorAll('input[name="whose"]').forEach(function(e){e.checked=false;});build();}});
+  document.querySelectorAll('[data-job]').forEach(function(a){a.addEventListener('click',function(){f.querySelectorAll('input[name="need"]').forEach(function(e){e.checked=(e.value===a.dataset.job);});build();});});
+  document.getElementById('copy').addEventListener('click',function(){
+    var t=build();
+    function done(){copied.textContent='복사했어요. 전화로 상담하실 때 이 내용을 보고 말씀하셔도 됩니다.';}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,fb);}else fb();
+    function fb(){var ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){copied.textContent='복사가 안 되면 위 내용을 길게 눌러 복사해 주세요.';}document.body.removeChild(ta);}
+  });
+  build();
+
+  var bar=document.getElementById('callbar'),heroCall=document.getElementById('hero-call'),contact=document.getElementById('contact');
+  if('IntersectionObserver' in window){var hv=true,cv=false;var upd=function(){var s=!hv&&!cv;bar.classList.toggle('show',s);bar.querySelector('a').tabIndex=s?0:-1;};
+    new IntersectionObserver(function(es){hv=es[0].isIntersecting;upd();}).observe(heroCall);
+    new IntersectionObserver(function(es){cv=es[0].isIntersecting;upd();},{rootMargin:'0px 0px -30% 0px'}).observe(contact);
+  }else{bar.classList.add('show');}
+  document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('[data-track]');if(el&&window.gtag)window.gtag('event',el.dataset.track,{location:el.dataset.where||''});});
+})();
+</script>
+</body></html>
